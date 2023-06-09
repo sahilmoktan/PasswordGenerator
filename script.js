@@ -31,9 +31,15 @@ function generatePassword() {
   allChars += numbers.checked ? allNumbers : "";
   allChars += symbols.checked ? allSymbols : "";
 
-  genpassword = upperChars.charAt(
-    Math.floor(Math.random() * upperChars.length)
-  );
+  if (allChars == "" || allChars.length == 0) {
+    return genpassword;
+  }
+
+  let i = 1;
+  while (i <= inputSlider.value) {
+    genpassword += allChars.charAt(Math.floor(Math.random() * allChars.length));
+    i++;
+  }
 
   return genpassword;
 }
