@@ -11,7 +11,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right bottom, #ffa585, #45c5d8);
+    background: linear-gradient(to right bottom, #f1b5a0, #3fd5ec);
     color: #fff;
     font-weight: 600;
 }
@@ -73,7 +73,7 @@ body{
 .genBtn{
     border: none;
     outline: none;
-    background-color: #2c619e;
+    background-color: #439e2c;
     padding: 12px 24px;
     color: #fff;
     font-size: 18px;
@@ -84,5 +84,5 @@ body{
 }
 
 .genBtn:hover{
-    background-color: #0066ff;
+    background-color: #099710;
 }
